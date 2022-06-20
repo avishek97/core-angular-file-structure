@@ -1,0 +1,20 @@
+1. Delete everything inside src folder.
+2. create an index.html file.
+3. create style.css
+4. create main.ts file.
+5. make an app folder.
+6. in index.html just below the utf-8 create <base href="/" /> to nagivate it to index page.
+7. Goto main.ts and do the bootstrapping the entry file.
+8. the bootstrapModule should contains the entry point of the project.
+so we gonna create a file app.module.ts
+9. app.module.ts is an module so we have to declre it as a module
+hence we need to import NgModule from angular-core.
+10. app.module.ts contains 3 things under @NgModule which is import,declaration,bootstrap.
+11. import contains browerModule, declaration contains all the component, bootstrap contains the entry point.
+12. index.html file should contains selector value which us mentioned under app.component.ts
+13. app.component.ts should be injected as @Component from angular-core
+14. app.component.ts should contains selector,templateUrls,styleUrls
+15. selector value should be mentioned inside any html file if new component is generated within same module then the selector value should be mentioned
+wihtin the html file after which that component to be displayed.
+templateUrls contains local file url of the html file of that module. ex- in app module app.component.html selector should be mentioned in index.html and if new component will be made then the value of the selector will be mentioned inside app.component.html
+styleUrls contains call the style sheet path.
